@@ -111,7 +111,7 @@ main {
 
 #teams {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   background-image: url(../images/backgrounds/bgk-header.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -128,6 +128,8 @@ main {
 .members {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .introMember h2,
