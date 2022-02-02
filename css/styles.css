@@ -2,35 +2,49 @@
   font-family: sans-serif;
   border: 1px solid red;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: grey;
 }
 
 body {
+  margin: auto;
   width: 1600px;
   background-color: lightgrey;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
   display: flex;
   flex-direction: row;
+  min-height: 30px;
+  background-color: purple;
 }
 
 nav {
-  display: flex;
+  /* display: flex; */
 }
 nav a {
   background: deepskyblue;
 }
 #intro {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 550px;
+  justify-content: center;
+  background-image: url(../images/backgrounds/bgk-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: auto;
 }
 
 main {
-  width: 1600px;
+  /* width: 1600px; */
+  display: block;
+  background-color: yellow;
 }
 
 .navigation {
@@ -56,21 +70,32 @@ main {
 
 #about {
   display: flex;
-  justify-items: center;
   flex-flow: row nowrap;
+  justify-items: center;
+  gap: 80px;
 }
 
 .left-side {
   background-color: red;
+  width: 50%;
+  text-align: right;
 }
 .right-side {
   background-color: blue;
+  text-align: left;
+  width: 50%;
+}
+
+.story {
+  text-align: left;
 }
 
 #video {
   display: flex;
   justify-content: center;
   background-image: url(../images/backgrounds/bgk-middle.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   object-fit: auto;
   width: 100%;
   height: 550px;
@@ -86,18 +111,32 @@ main {
 
 #teams {
   display: flex;
-  justify-content: center;
+  justify-items: center;
   background-image: url(../images/backgrounds/bgk-header.jpg);
-  /* object-fit: auto; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: auto;
   width: 100%;
   height: 550px;
   color: white;
 }
+.teamFigures {
+  display: flex;
+  justify-content: center;
+}
 
 .members {
   display: flex;
-  flex-direction: row;
-  justify-items: center;
+  flex-direction: column;
+}
+
+.introMember h2,
+p {
+  text-align: center;
+}
+
+#member {
+  text-align: center;
 }
 
 #member img {
@@ -114,6 +153,12 @@ main {
 
 #contact {
 }
+section {
+  min-height: 30px;
+  background-color: lightgreen;
+}
 
 footer {
+  min-height: 30px;
+  background-color: purple;
 }
