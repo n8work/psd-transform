@@ -85,6 +85,25 @@ main {
 }
 
 #teams {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/backgrounds/bgk-header.jpg);
+  /* object-fit: auto; */
+  width: 100%;
+  height: 550px;
+  color: white;
+}
+
+.members {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+#member img {
+  width: 100px;
+  height: 100px;
+  background-color: white;
 }
 
 #works {
