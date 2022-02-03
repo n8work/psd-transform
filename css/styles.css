@@ -47,6 +47,7 @@ nav a {
 }
 
 .agency p {
+  margin-top: 2.5rem;
   width: 20rem;
   font-size: 12px;
   text-align: center;
@@ -84,21 +85,26 @@ main {
   display: flex;
   flex-flow: row nowrap;
   justify-items: center;
-  gap: 80px;
+  align-items: center;
+  gap: 60px;
+  height: 400px;
+  background-color: white;
 }
 
 .left-side {
-  background-color: red;
+  /* background-color: red; */
   width: 50%;
   text-align: right;
 }
 .right-side {
-  background-color: blue;
+  /* background-color: blue; */
+  margin-top: 1rem;
   text-align: left;
-  width: 50%;
+  width: 30%;
 }
 
 .story {
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -228,21 +234,37 @@ p {
   flex-direction: column;
 }
 
-.button {
-  width: 140px;
-  height: 50px;
-  font-size: 16px;
+.button-agency {
+  width: 120px;
+  height: 40px;
+  margin-top: 2rem;
+  font-size: 14px;
   background-color: transparent;
-
   color: #23d39e;
-  /* background: #ffffff; */
   border: 2px solid #23d39e;
-  border-radius: 10px;
   font-family: arial;
   transition: all 0.25s ease;
 }
-.button:hover {
-  color: #000000;
+.button-agency:hover {
+  color: greenyellow;
+  /* background: #01af1b; */
+  box-shadow: 0px 0px 15px 0.5px #006c29;
+  border-color: none;
+}
+
+.button-about {
+  width: 120px;
+  height: 40px;
+  margin-top: 2rem;
+  font-size: 14px;
+  background-color: transparent;
+  color: #23d39e;
+  border: 2px solid #23d39e;
+  font-family: arial;
+  transition: all 0.25s ease;
+}
+.button-about:hover {
+  color: black;
   /* background: #01af1b; */
   box-shadow: 0px 0px 15px 0.5px #006c29;
   border-color: none;
