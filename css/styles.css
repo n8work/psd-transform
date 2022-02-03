@@ -188,31 +188,69 @@ p {
 
 #contact {
     display: grid;
-    grid-template: 10% 10% auto / 50% 25% 25%;
-    height: 70vh;
+    grid-template: 5% 10% auto / 5% 45% 22.5% 22.5% 5%;
+    height: 750px;
+    background-color: white;
+    padding-bottom: 1.5%;
+}
+
+#contact object {
+    height: 100px;
+    margin-bottom: 5%;
 }
 
 #contact h2{
-    margin-left: 10%;
+    margin-left: 1.5%;
 }
 
 .textContact {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: flex;
-    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .textCustomers {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
 }
 
 .formContact{
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
     display: flex;
     flex-direction: column;
+    padding: 1.5%;
+}
+
+.iconsCustomersLeft{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.iconsCustomersRight{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.inputContactText{
+    height: 10%;
+    margin-bottom: 1.5%;
+    font-size: 18px;
+    padding-left: 2.5%;
+}
+
+.inputContactTextArea{
+    resize: none;
+    font-size: 32px;
+    height: 100%;
+    font-size: 12px;
+    margin-bottom: 1.5%;
+    padding: 2.5%;
 }
 
 .button {
@@ -239,6 +277,63 @@ section {
 }
 
 footer {
-  min-height: 30px;
-  background-color: purple;
+  min-height: 400px;
+  background-image: url(../images/backgrounds/bgk-footer.jpg);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5% 5%;
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerRow span {
+    font-size: 28px;
+}
+
+.footerRowMiddle {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.footerRowMiddle p{
+    text-align: left;
+    font-size: 24px;
+}
+
+.footerElement {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+
+.footerElementColumn {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+.footerElementColumn object{
+    margin-right: 2%;
+}
+
+.footerElementColumn input{
+    width: 70%;
+    height: 50px;
+    font-size: 42px;
+    margin-bottom: 5%;
+    color: white;
+    background-color: transparent;
+}
+
+.footerElementColumn button{
+    width: 20%;
+    height: 50px;
+    margin-bottom: 5%;
+    background-color: white;
+    opacity: 50%;
 }
