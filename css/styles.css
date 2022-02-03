@@ -107,6 +107,39 @@ main {
 }
 
 #expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5%;
+    background-color: white;
+}
+
+.imgBoxBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 24px;
+}
+
+.imgBox object{
+    height: 20%;
+    margin-bottom: 10%;
+}
+
+.imgBox span{
+    margin-top: 10%;
+    font-size: 22px;
 }
 
 #teams {
@@ -154,6 +187,32 @@ p {
 }
 
 #contact {
+    display: grid;
+    grid-template: 10% 10% auto / 50% 25% 25%;
+    height: 70vh;
+}
+
+#contact h2{
+    margin-left: 10%;
+}
+
+.textContact {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.textCustomers {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.formContact{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
