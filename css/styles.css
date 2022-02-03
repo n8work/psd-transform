@@ -22,9 +22,6 @@ header {
   background-color: purple;
 }
 
-nav {
-  /* display: flex; */
-}
 nav a {
   background: deepskyblue;
 }
@@ -33,6 +30,7 @@ nav a {
   grid-template-areas: 1fr;
 }
 
+/* Intro-Section */
 .agency {
   display: flex;
   justify-content: center;
@@ -48,14 +46,17 @@ nav a {
 
 .agency p {
   margin-top: 2.5rem;
-  width: 20rem;
-  font-size: 12px;
+  width: 40rem;
+  font-size: 16px;
   text-align: center;
   padding: 10px;
 }
 
+.agency h1 {
+  font-size: 32px;
+}
+
 main {
-  /* width: 1600px; */
   display: block;
   background-color: yellow;
 }
@@ -64,7 +65,6 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
   list-style: none;
   margin: 0;
   background: deepskyblue;
@@ -80,7 +80,7 @@ main {
 .navigation a:hover {
   background: #1565c0;
 }
-
+/* About, linke und rechte Seite */
 #about {
   display: flex;
   flex-flow: row nowrap;
@@ -101,6 +101,11 @@ main {
   margin-top: 1rem;
   text-align: left;
   width: 30%;
+}
+
+.right-side > h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
 }
 
 .story {
@@ -167,14 +172,14 @@ main {
   background-image: url(../images/backgrounds/bgk-header.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  object-fit: auto;
   width: 100%;
-  height: 550px;
+  height: 670px;
   color: white;
 }
 .teamFigures {
   display: flex;
   justify-content: center;
+  width: 1500px;
 }
 
 .members {
@@ -182,21 +187,38 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
-.introMember h2,
-p {
+.introMember h2 {
   text-align: center;
+  margin-bottom: 1rem;
+}
+.introMember p {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 #member {
   text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 #member img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: white;
+}
+
+figcaption {
+  height: 80px;
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+
+  padding: 0.7rem;
+  border: solid 1px white;
 }
 
 #works {
@@ -240,14 +262,30 @@ p {
   margin-top: 2rem;
   font-size: 14px;
   background-color: transparent;
-  color: #23d39e;
-  border: 2px solid #23d39e;
+  color: cyan;
+  border: 2px solid cyan;
   font-family: arial;
   transition: all 0.25s ease;
 }
 .button-agency:hover {
-  color: greenyellow;
-  /* background: #01af1b; */
+  color: lightgreen;
+  box-shadow: 0px 0px 15px 0.5px #006c29;
+  border-color: none;
+}
+
+.button-hiring {
+  width: 140px;
+  height: 40px;
+  margin-top: 2rem;
+  font-size: 14px;
+  background-color: transparent;
+  color: cyan;
+  border: 2px solid cyan;
+  font-family: arial;
+  transition: all 0.25s ease;
+}
+.button-hiring:hover {
+  color: lightgreen;
   box-shadow: 0px 0px 15px 0.5px #006c29;
   border-color: none;
 }
@@ -255,11 +293,11 @@ p {
 .button-about {
   width: 120px;
   height: 40px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   font-size: 14px;
   background-color: transparent;
-  color: #23d39e;
-  border: 2px solid #23d39e;
+  color: cyan;
+  border: 2px solid cyan;
   font-family: arial;
   transition: all 0.25s ease;
 }
@@ -268,6 +306,16 @@ p {
   /* background: #01af1b; */
   box-shadow: 0px 0px 15px 0.5px #006c29;
   border-color: none;
+}
+
+hr {
+  width: 10%;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b7d0e2;
+  border: 0 none;
+  margin-bottom: 2rem;
 }
 
 section {
