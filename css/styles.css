@@ -1,5 +1,5 @@
 /* import fonts from other css file */
-@import "fonts.css";
+@import 'fonts.css';
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 header {
   padding-top: 0.8rem;
   padding-bottom: 0.6rem;
-  background-color: #2B2C49;
+  background-color: #2b2c49;
 }
 
 .navcontainer {
@@ -35,7 +35,7 @@ header {
 
 /* written logo text */
 .logoName {
-  color: #8CE1D5;
+  color: #8ce1d5;
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.1rem;
@@ -69,16 +69,14 @@ header {
 
 /* default button link hover color */
 .navigation a:hover {
-  color: #8CE1D5;
+  color: #8ce1d5;
 }
 
 .contact {
   margin-right: auto;
 }
 
-
 main {
-  /* width: 1600px; */
   display: block;
   background-color: yellow;
 }
@@ -90,32 +88,43 @@ main {
   background-repeat: no-repeat;
   object-fit: auto;
 }
-
+/* About, linke und rechte Seite */
 #about {
   display: flex;
   flex-flow: row nowrap;
   justify-items: center;
-  gap: 80px;
+  align-items: center;
+  gap: 60px;
+  height: 400px;
+  background-color: white;
 }
 
 .left-side {
-  background-color: red;
+  /* background-color: red; */
   width: 50%;
   text-align: right;
 }
 .right-side {
-  background-color: blue;
+  /* background-color: blue; */
+  margin-top: 1rem;
   text-align: left;
-  width: 50%;
+  width: 30%;
+}
+
+.right-side > h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
 }
 
 .story {
+  margin-top: 1rem;
   text-align: left;
 }
 
 #video {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(../images/backgrounds/bgk-middle.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -130,39 +139,39 @@ main {
 }
 
 #expertise {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.5%;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5%;
+  background-color: white;
 }
 
-.imgBoxBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.imgBoxBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.imgBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 450px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-size: 24px;
+.imgBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  font-size: 24px;
 }
 
-.imgBox object{
-    height: 20%;
-    margin-bottom: 10%;
+.imgBox object {
+  height: 20%;
+  margin-bottom: 10%;
 }
 
-.imgBox span{
-    margin-top: 10%;
-    font-size: 22px;
+.imgBox span {
+  margin-top: 10%;
+  font-size: 22px;
 }
 
 #teams {
@@ -171,14 +180,14 @@ main {
   background-image: url(../images/backgrounds/bgk-header.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  object-fit: auto;
   width: 100%;
-  height: 550px;
+  height: 670px;
   color: white;
 }
 .teamFigures {
   display: flex;
   justify-content: center;
+  width: 1500px;
 }
 
 .members {
@@ -186,21 +195,38 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
-.introMember h2,
-p {
+.introMember h2 {
   text-align: center;
+  margin-bottom: 1rem;
+}
+.introMember p {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 #member {
   text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 #member img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: white;
+}
+
+figcaption {
+  height: 80px;
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+
+  padding: 0.7rem;
+  border: solid 1px white;
 }
 
 #works {
@@ -210,85 +236,85 @@ p {
 }
 
 #contact {
-    display: grid;
-    grid-template: 5% 10% auto / 5% 45% 22.5% 22.5% 5%;
-    height: 750px;
-    background-color: white;
-    padding-bottom: 1.5%;
+  display: grid;
+  grid-template: 5% 10% auto / 5% 45% 22.5% 22.5% 5%;
+  height: 750px;
+  background-color: white;
+  padding-bottom: 1.5%;
 }
 
 #contact object {
-    height: 100px;
-    margin-bottom: 5%;
+  height: 100px;
+  margin-bottom: 5%;
 }
 
-#contact h2{
-    margin-left: 1.5%;
+#contact h2 {
+  margin-left: 1.5%;
 }
 
 .textContact {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .textCustomers {
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
 }
 
-.formContact{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5%;
+.formContact {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
 }
 
-.iconsCustomersLeft{
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
+.iconsCustomersLeft {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
 }
 
-.iconsCustomersRight{
-    grid-column: 4 / 5;
-    grid-row: 3 / 4;
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
+.iconsCustomersRight {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
 }
 
-.inputContactText{
-    height: 10%;
-    margin-bottom: 1.5%;
-    font-size: 18px;
-    padding-left: 2.5%;
+.inputContactText {
+  height: 10%;
+  margin-bottom: 1.5%;
+  font-size: 18px;
+  padding-left: 2.5%;
 }
 
-.inputContactTextArea{
-    resize: none;
-    font-size: 32px;
-    height: 100%;
-    font-size: 12px;
-    margin-bottom: 1.5%;
-    padding: 2.5%;
+.inputContactTextArea {
+  resize: none;
+  font-size: 32px;
+  height: 100%;
+  font-size: 12px;
+  margin-bottom: 1.5%;
+  padding: 2.5%;
 }
 
 .button {
   width: 140px;
   height: 50px;
-  color: #8CE1D5;
+  color: #8ce1d5;
   font-size: 16px;
-  border: 1px solid #8CE1D5;
+  border: 1px solid #8ce1d5;
   background: none;
   transition: all 0.25s ease;
 }
 
 .button:hover {
   cursor: pointer;
-  color: #8CE1D5;
+  color: #8ce1d5;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -312,61 +338,61 @@ footer {
 }
 
 .footerRow {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .footerRow span {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .footerRowMiddle {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2%;
-    padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
-.footerRowMiddle p{
-    text-align: left;
-    font-size: 24px;
+.footerRowMiddle p {
+  text-align: left;
+  font-size: 24px;
 }
 
 .footerElement {
-    width: calc(100% / 3);
-    display: flex;
-    align-items: center;
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
 }
 
 .footerElementColumn {
-    width: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
 }
 
-.footerElementColumn object{
-    margin-right: 2%;
+.footerElementColumn object {
+  margin-right: 2%;
 }
 
-.footerElementColumn input{
-    width: 70%;
-    height: 50px;
-    font-size: 42px;
-    margin-bottom: 5%;
-    color: white;
-    background-color: transparent;
+.footerElementColumn input {
+  width: 70%;
+  height: 50px;
+  font-size: 42px;
+  margin-bottom: 5%;
+  color: white;
+  background-color: transparent;
 }
 
-.footerElementColumn button{
-    width: 20%;
-    height: 50px;
-    margin-bottom: 5%;
-    background-color: white;
-    opacity: 50%;
+.footerElementColumn button {
+  width: 20%;
+  height: 50px;
+  margin-bottom: 5%;
+  background-color: white;
+  opacity: 50%;
 }
 
 h1 {
-  color: #FFF;
+  color: #fff;
   font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 2.2rem;
@@ -397,7 +423,7 @@ p {
 
 /* company base color */
 .tajamcolor {
-  color: #8CE1D5;
+  color: #8ce1d5;
 }
 
 /* custom short hr */
