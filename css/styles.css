@@ -1,45 +1,81 @@
+/* import fonts from other css file */
+@import "fonts.css";
+
 * {
-  font-family: sans-serif;
-  border: 1px solid red;
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  font-size: 16px;
 }
+
 html {
-  background-color: grey;
+  background-color: #333;
 }
 
 body {
   margin: auto;
   width: 1600px;
-  background-color: lightgrey;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  min-height: 30px;
-  background-color: purple;
+  padding-top: 0.8rem;
+  padding-bottom: 0.6rem;
+  background-color: #2B2C49;
 }
 
-nav {
-  /* display: flex; */
-}
-nav a {
-  background: deepskyblue;
-}
-#intro {
+.navcontainer {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  height: 550px;
-  justify-content: center;
-  background-image: url(../images/backgrounds/bgk-header.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  object-fit: auto;
+  margin-left: 300px;
+  margin-right: 300px;
 }
+
+.logos {
+  margin-right: auto;
+  display: flex;
+}
+
+/* written logo text */
+.logoName {
+  color: #8CE1D5;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  /* align inner content to middle */
+  align-self: center;
+  padding-left: 1rem;
+}
+
+/* navigation buttons */
+.navigation {
+  display: flex;
+  list-style: none;
+  /*define button fonts*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* 2rem @ 16px base equals to 32px */
+}
+
+/* default button link font */
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em;
+  font-size: 0.7rem;
+}
+
+/* default button link hover color */
+.navigation a:hover {
+  color: #8CE1D5;
+}
+
+.contact {
+  margin-right: auto;
+}
+
 
 main {
   /* width: 1600px; */
@@ -47,25 +83,12 @@ main {
   background-color: yellow;
 }
 
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  list-style: none;
-  margin: 0;
-  background: deepskyblue;
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}
-
-.navigation a:hover {
-  background: #1565c0;
+#intro {
+  height: 550px;
+  background-image: url(../images/backgrounds/bgk-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: auto;
 }
 
 #about {
@@ -192,7 +215,7 @@ p {
     height: 70vh;
 }
 
-#contact h2{
+#contact h2 {
     margin-left: 10%;
 }
 
@@ -218,27 +241,71 @@ p {
 .button {
   width: 140px;
   height: 50px;
+  color: #8CE1D5;
   font-size: 16px;
-  color: #23d39e;
-  /* background: #ffffff; */
-  border: 2px solid #23d39e;
-  border-radius: 10px;
-  font-family: arial;
+  border: 1px solid #8CE1D5;
+  background: none;
   transition: all 0.25s ease;
 }
+
 .button:hover {
-  color: #000000;
-  /* background: #01af1b; */
-  box-shadow: 0px 0px 15px 0.5px #006c29;
-  border-color: none;
+  cursor: pointer;
+  color: #8CE1D5;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-section {
-  min-height: 30px;
-  background-color: lightgreen;
+section#intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: -70px;
 }
 
 footer {
   min-height: 30px;
   background-color: purple;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 40px 40px;
+}
+
+p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.intro_text {
+  padding-left: 350px;
+  padding-right: 350px;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin: 40px 40px;
+}
+
+/* general classes */
+
+/* just align text */
+.centered {
+  text-align: center;
+}
+
+/* company base color */
+.tajamcolor {
+  color: #8CE1D5;
+}
+
+/* custom short hr */
+.horizontal_rule {
+  width: 4rem;
 }
