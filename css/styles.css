@@ -318,6 +318,10 @@ figcaption {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.btn_dark_hover:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 section#intro {
   display: flex;
   flex-direction: column;
@@ -399,6 +403,22 @@ h1 {
   margin: 40px 40px;
 }
 
+/* sub headlines e.g. our story, expertise... */
+h2 {
+  color: #403E4A;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* custom hack */
+.right-side > h2 {
+	margin-top: 0.2rem;
+	margin-bottom: 1.2rem;
+}
+
 p {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -412,6 +432,25 @@ p {
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
   margin: 40px 40px;
+}
+
+.story {
+  color: #333;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.expertise_subtext {
+  color: #333;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-top: 20px;
 }
 
 /* general classes */
