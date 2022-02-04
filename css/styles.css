@@ -78,7 +78,7 @@ header {
 
 main {
   display: block;
-  background-color: yellow;
+  background-color: rgb(115, 255, 122);
 }
 
 #intro {
@@ -187,7 +187,8 @@ main {
 .teamFigures {
   display: flex;
   justify-content: center;
-  width: 1500px;
+  width: 900px;
+  margin-top: 1rem;
 }
 
 .members {
@@ -201,10 +202,19 @@ main {
 .introMember h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 .introMember p {
   text-align: center;
   margin-bottom: 3rem;
+}
+.introMember {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  text-align: center;
 }
 
 #member {
@@ -223,16 +233,8 @@ figcaption {
   height: 80px;
   width: 150px;
   font-size: 16px;
-  text-align: center;
-
   padding: 0.7rem;
   border: solid 1px white;
-}
-
-#works {
-}
-
-#people {
 }
 
 #contact {
@@ -303,7 +305,7 @@ figcaption {
 }
 
 .button {
-  width: 140px;
+  width: 120px;
   height: 50px;
   color: #8ce1d5;
   font-size: 16px;
@@ -321,6 +323,11 @@ figcaption {
 .btn_dark_hover:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+.hiRing {
+  margin-top: 2rem;
+  width: 140px;
+}
+
 
 section#intro {
   display: flex;
