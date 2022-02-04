@@ -353,9 +353,10 @@ footer {
   padding-bottom: 5%;
 }
 
-.footerRowMiddle p {
+.footerRowMiddle span {
   text-align: left;
   font-size: 24px;
+  color: white;
 }
 
 .footerElement {
@@ -389,6 +390,18 @@ footer {
   margin-bottom: 5%;
   background-color: white;
   opacity: 50%;
+}
+
+.footerElementColumn span {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.wordSpace{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5%;
 }
 
 h1 {
